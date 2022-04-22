@@ -63,13 +63,13 @@ html,body{
 .icon{
   display: none !important;
   margin-right: 20px;
+  margin-top: 5px;
 }
 .header .navbar ul li a span{
-  border-top: 2px solid #fff;
+  border-top: 2px solid #131313 !important;
   width: 35px;
   height: 8px;
-  display: block
-
+  display: block;
 }
 .header .navbar ul li a:hover{
   text-decoration: underline;
@@ -358,15 +358,15 @@ padding: 50px 0px;
 .sociaux{
   overflow: auto;
   padding: 0 204px;
-  margin-top: -80px;
+  margin-top: -60px;
 }
 .sociaux .facebook,.sociaux .dribbble,.sociaux .twitter{
   display: inline-block;
   text-align: center;
 }
 .sociaux .facebook a ,.sociaux .dribbble a, .sociaux .twitter a{
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   background-color: rgb(218, 218, 218);
   border: 8px solid rgba(255, 255, 255, 0.52);
   display: inline-block;
@@ -434,6 +434,12 @@ padding: 50px 0px;
 
 
 @media screen and (max-width:900px){
+.esp1 {
+  width: auto;
+  height: 100px;
+  background-color: rgb(239, 239, 239);
+}
+
 .header .navbar .logo img{
   width: 60%;
   height: auto;
@@ -463,8 +469,11 @@ padding: 50px 0px;
 
 }
 .header .navbar ul {
- width: 100%;
+ width: 100% !important;
  float: none;
+ justify-content: end;
+ display:grid;
+ margin-top: 0px;
 }
 .icon{
  position: absolute;
@@ -474,13 +483,53 @@ background-color:  rgba(0, 0, 0, 0) !important;
  right: 0;
  top: 3px;
 }
+
 .header .responsive  li {
   float: none !important;
-  display: block !important;
+  display: flex !important;
   text-align: left;
   }
+.navBtnBorder {
+border-style: solid;
+border-width: 2px;
+border-color: rgb(154, 154, 154);
+padding-top: 1rem !important;
+padding-bottom: 1rem !important;
+margin-left: 0rem;
+background-color: #fff !important;
+justify-content: center;
+display: flex;
+width: 200px;
+margin-bottom: 2px;
+}
+.header .navbar ul li a .line1{
+text-transform: uppercase;
+color: #fff;
+font-weight: bold;
+font-size: 2.5rem;
+font-family: Roboto Condensed;
+letter-spacing: 1.2px;
+color: #131313;
+justify-content: end;
+}
+.header .navbar ul li a span{
+  border-top: 2px solid #fff;
+  width: 35px;
+  height: 8px;
+  display: block
+}
+.header .navbar ul li a{
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: Roboto Condensed;
+  letter-spacing: 1.2px;
+  color: #131313;
+}
 .header .responsive .icon{
-  background-color:  rgba(255, 255, 255, 0.39) !important;
+  background-color:  rgba(154, 154, 154, 0.39) !important;
+  margin-top: 5px;
 }
 .goahead{
   width: 250px;
@@ -600,7 +649,7 @@ background-color:  rgba(0, 0, 0, 0) !important;
   right: 0;
   left: 0;
   width: 90%;
-  margin: -50px auto;
+  margin: -40px auto;
   position: absolute;
   justify-content: center;
   display: flex;
