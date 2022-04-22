@@ -62,6 +62,7 @@ html,body{
 }
 .icon{
   display: none !important;
+  margin-right: 20px;
 }
 .header .navbar ul li a span{
   border-top: 2px solid #fff;
